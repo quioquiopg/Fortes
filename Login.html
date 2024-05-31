@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="limite-sessao">
+            <img src="Img/Fortes logo.png" alt="logo da Fortes">
+        </div>
+    </header>
+    <main>
+    <section class="caixa">
+            <div class="main-conteiner">
+                <h3>Login</h3>
+                <br>
+                <span>Usuário</span>
+                <input id="usuario" type="email" size="15">
+                <br>
+                <span>Senha</span>
+                <input id="senha" type="password" size="15">
+                <br>
+                <button onclick="validar()">Entrar</button>
+                <!--<button onclick="cancelar()">Cancelar</button>-->
+            </div>
+    </section>
+   </main>
+</body>
+<script>
+    const adm = "adm@uvv.br"
+    const psw = "admin123"
+
+    function validar() {
+        var usuario = "";
+        var senha = "";
+        usuario = document.getElementById("usuario").value;
+        senha = document.getElementById("senha").value;
+        if (usuario == adm && senha == psw) {
+            window.open("Admin.html","_self");
+        }
+        else{
+            window.alert("Usuário ou Senha inválido. Tente novamente!")
+        }
+    }
+
+    /*function cancelar() {
+        window.open("index.html","_self");
+    }*/
+</script>
+</html>
