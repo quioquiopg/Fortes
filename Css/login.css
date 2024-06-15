@@ -11,7 +11,6 @@
 
 main{
     display: flex;
-
 }
 
 section{
@@ -29,7 +28,7 @@ header div{
     background-color: rgb(0, 153, 255);
 }
 header{
-    background-color:  rgb(0, 153, 255);;
+    background-color: rgb(0, 153, 255);
     width: max(100%, 5vh);
 }
 header img{
@@ -40,7 +39,6 @@ header a{
     text-decoration: none;
     color: black;
     padding: 5%;
-
 }
 
 .barra-lateral{
@@ -69,7 +67,61 @@ align-items: center;
     background-color: white;
     padding: 20px;
     width: 400px;
-    height: 150px;
+    height: auto; 
     margin: auto;
     border-radius: 30px;
 }
+
+@media only screen and (max-width: 768px) {
+     .barra-lateral {
+         width: 10vh; 
+     }
+
+     .caixa {
+         left: 5vh; 
+         width: 80vh; 
+         bottom:auto; 
+         top:auto; 
+         transform:auto; 
+     }
+
+     .main {
+         width:auto; 
+         height:auto; 
+         padding-top:auto; 
+         padding-bottom:auto; 
+     }
+
+     header div, .limite-sessao {
+         padding-left:auto; 
+         padding-right:auto; 
+         justify-content:center; 
+         left:auto; 
+         right:auto; 
+         width:auto; 
+         position:relative; 
+        
+     }
+
+     header img {
+         width:auto; 
+         height:auto; 
+         max-width:none; 
+         max-height:none; 
+     }
+}
+
+@media only screen and (max-width:480px) {
+     .barra-lateral {
+         display:none; 
+     }
+
+     .caixa, .main {
+         left:auto; 
+         right:auto; 
+         bottom:auto; 
+         top:auto; 
+         margin:auto; 
+         position:relative;
+         }
+    }
