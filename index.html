@@ -40,10 +40,10 @@
         usuario = document.getElementById("usuario").value;
         senha = document.getElementById("senha").value;
         if (usuario == adm && senha == psw) {
-            window.open("/Admin.html","_self");
+            window.location.href = "/Admin.html";
         }
         else if (usuario == usu && senha == psw2) {
-        window.open("/Usuario.html", "_self");
+        window.location.href = "/Usuario.html";
         }
         else{
             window.alert("Usuário ou Senha inválido. Tente novamente!")
