@@ -24,17 +24,17 @@ function enviarMensagem() {
 }
 
 function logout(){
-    window.open("/Login.html","_self")
+    window.location.href = "index.html"
 }
 function Admin2(){
-    window.open("/Admin2.html","_self")
+    window.location.href = "Admin2.html"
 }
 function Admin1(){
-    window.open("/Admin.html","_self")
+    window.location.href = "Admin.html"
 }
 
 function chat(){
-    window.open("/Admin.html","_self")
+ window.location.href = "Admin.html"
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
