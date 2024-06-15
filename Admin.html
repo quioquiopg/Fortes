@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-pic"></div>
+        <button class="sidebar-btn" onclick="abrirChat()">Chat</button>
+        <button class="sidebar-btn" onclick="Admin2()">Gerenciar</button>
+        <button class="sidebar-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="header">
+        <img src="Img/logo.png" alt="logo" class="logo"> 
+    </div>
+
+    <!-- Início do Chat -->
+    <div id="chat-container" class="chat-container">
+        <div id="chat-window" class="chat-window">
+            <div class="chat-header">
+                <span>Chat</span>
+                <button onclick="fecharChat()">X</button>
+            </div>
+            <div id="chat-body" class="chat-body">
+                <!-- Mensagens serão adicionadas aqui -->
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+                <button onclick="enviarMensagem()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Fim do Chat -->
+
+    <footer class="footer"> </footer>
+
+    <!-- Scripts -->
+<script>
+function logout(){
+    window.open("/Login.html","_self")
+}
+function Admin2(){
+    window.open("/Admin2.html","_self")
+}
+function Admin1(){
+    window.open("/Admin.html","_self")
+}
+
+function chat(){
+    window.open("/Admin.html","_self")
+}
+</script>
+
+
+    
+</body>
+</html>

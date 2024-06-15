@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Fortes</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/formulario.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-pic"></div>
+       
+        <button class="sidebar-btn" onclick="Projetos()">Projetos</button>
+        <button class="sidebar-btn" onclick="Formulario()">Formularios</button>
+        <button class="sidebar-btn" onclick="logout()">Logout</button>
+    </div>
+        <div class="header">
+            <img src="Img/logo.png" alt="logo" class="logo"> </div>
+                </div>
+            </div>
+        </div>
+     
+    
+    <footer class="footer"> </footer>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+    <section id="contato">
+        <div class="main-conteiner">
+            <form class="formulario" action="mailto:empresafortes@hotmail.com" method="post">
+                <p>Fomulário para Contato</p>
+                <div class="field">
+                    <label for="">Nome do representante</label>
+                    <input type="text" name="nome-representante" id="nome-usario01" size="40" maxlength="30" value=""
+                        placeholder="Digite o nome da empresa" required>
+                </div>
+                <div class="field">
+                    <label for=""> Data de hoje</label>
+                    <input type="date" required>
+                    <label for=""> Data para a realização do projeto</label>
+                    <input type="date" required>
+                </div>
+
+                <div>
+                    <span>Descrição do projeto</span>
+                    <textarea name="descricao" cols="50" rows="10" placeholder="resuma seu projeto aqui"
+                        readonly></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                <input type="button" value="enviar" type="submit">
+                </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+</body>
+<script>
+    function logout(){
+        window.open("/Login.html","_self")
+    }
+    function Projetos(){
+        window.open("/Usuario2.html","_self")
+    }
+    function Formulario(){
+        window.open("/Usuario.html","_self")
+    }
+</script>
+</html>

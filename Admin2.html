@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle</title>
+<link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="profile-pic"></div>
+        <button class="sidebar-btn" onclick="chat()">Chat</button>
+        <button class="sidebar-btn" onclick="Admin2()">Gerenciar</button>
+        <button class="sidebar-btn" onclick="logout()">Logout</button>
+    </div>
+
+<!-- Conteúdo principal -->
+<div class="main-content" style="margin-left: 120px; padding: 20px;">
+    <h1> Painel de Controle</h1>
+    <div class="project" style="background-color: #f2f2f2; border: 1px solid #ccc; padding: 15px; margin-bottom: 10px;">
+        <h2 style="color: #333;">Projeto Exemplo 1</h2>
+        <p style="color: #666;">Descrição do Projeto Exemplo 1...</p>
+        <button onclick="removeProject(this)" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-right: 5px;">Aceitar</button>
+        <button onclick="removeProject(this)" style="background-color: #f44336; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Recusar</button>
+    </div>
+    <div class="project" style="background-color: #f2f2f2; border: 1px solid #ccc; padding: 15px; margin-bottom: 10px;">
+        <h2 style="color: #333;">Projeto Exemplo 2</h2>
+        <p style="color: #666;">Descrição do Projeto Exemplo 2...</p>
+        <button onclick="removeProject(this)" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-right: 5px;">Aceitar</button>
+        <button onclick="removeProject(this)" style="background-color: #f44336; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Recusar</button>
+    </div>
+    <div class="project" style="background-color: #f2f2f2; border: 1px solid #ccc; padding: 15px; margin-bottom: 10px;">
+        <h2 style="color: #333;">Projeto Exemplo 3</h2>
+        <p style="color: #666;">Descrição do Projeto Exemplo 3...</p>
+        <button onclick="removeProject(this)" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-right: 5px;">Aceitar</button>
+        <button onclick="removeProject(this)" style="background-color: #f44336; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Recusar</button>
+    </div>
+            
+    
+</div>
+
+<script>
+    function logout(){
+    window.open("/Login.html","_self")
+}
+function Admin2(){
+    window.open("/Admin2.html","_self")
+}
+function Admin1(){
+    window.open("/Admin.html","_self")
+}
+
+function chat(){
+    window.open("/Admin.html","_self")
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Adiciona o evento de clique a todos os botões 'Aceitar' e 'Recusar'
+    document.querySelectorAll('.project button').forEach(button => {
+        button.addEventListener('click', function() {
+            this.parentElement.style.display = 'none'; // Esconde o elemento pai, que é o div do projeto
+        });
+    });
+});
+
+</script>
+
+</body>
+</html>
