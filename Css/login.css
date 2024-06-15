@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+ max-width: 1024px;
+}
+
+main{
+    display: flex;
+
+}
+
+section{
+    padding: 60px 20px;
+    background-color: white;
+}
+
+header div{
+    width: 1000vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    left: 20%;
+    background-color: rgb(0, 153, 255);
+}
+header{
+    background-color:  rgb(0, 153, 255);;
+    width: max(100%, 5vh);
+}
+header img{
+    width: 20vh;
+}
+header a{
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    padding: 5%;
+
+}
+
+.barra-lateral{
+    background-color: blue;
+    width: 15vh;
+    height: 100vh;
+    position:fixed
+}
+
+.limite-sessao{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.caixa{
+left: 50vh;
+bottom: 38vh;
+width: 100vh;
+background-color: blue;
+position: absolute;
+border-radius: 30px;
+align-items: center;
+}
+
+.main{
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    height: 150px;
+    margin: auto;
+    border-radius: 30px;
+}
